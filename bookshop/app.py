@@ -8,7 +8,7 @@ BOOKS = ['1984', 'foo', 'bar', "ahoj b"]
 
 @app.route("/")
 def hello():
-    response = "<H1>Books:</H1><BR>"
+    response = "<H1>Nemame:</H1><BR>"
     for book in BOOKS:
         try:
             review = requests.get(f'http://bookreview:8080/v1/review/{book}')
